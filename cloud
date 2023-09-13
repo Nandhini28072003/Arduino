@@ -1,0 +1,13 @@
+//arduino
+
+void setup() {
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  int temp = analogRead(A0);
+  int gas = analogRead(A1);
+  Serial.println(String(temp)+","+String(gas)+"*");
+  delay(1000);
+}
